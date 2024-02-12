@@ -1,0 +1,122 @@
+<div class="container-fluid home" *ngIf="(isMediumLargeXLarge | async)">
+    <div class="row r1">
+        <div class="col-sm-6 r1c1">
+            <div class="logo" *ngIf="(isMediumLargeXLarge | async)">
+                <a class="logo-button" color="primary" routerLink="home" (click)="scrollToTop()">
+                    <img class="logo-img" src="../../../assets/images/logo/thekoders.png" alt="Logo">
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6 r1c2">
+            <a class="a mat-button" color="primary" routerLinkActive="active" routerLink="home" (click)="scrollToTop()"
+                mat-button>Home</a>
+            <div class="services-link">
+                <a class="a mat-button" color="primary" routerLinkActive="" style="cursor: pointer;"
+                    mat-button>Services</a>
+                <div class="services-menu">
+                    <div class="web">
+                        <h6 class="h6">Web Development</h6>
+                        <ul class="ul">
+                            <li class="li">
+                                <a class="a mat-button" color="primary" href="mean-stack-development" mat-button>MEAN
+                                    Stack
+                                    Development</a>
+                            </li>
+                            <li class="li">
+                                <a class="a mat-button" color="primary" href="angular-development" mat-button>Angular
+                                    Development</a>
+                            </li>
+                            <li class="li">
+                                <a class="a mat-button" color="primary" href="react-development" mat-button> React Js
+                                    Development</a>
+                            </li>
+                            <li class="li">
+                                <a class="a mat-button" color="primary" href="node-development" mat-button> Node Js
+                                    Development </a>
+                            </li>
+                            <li class="li">
+                                <a class="a mat-button" color="primary" href="ui-ux-development" mat-button>Ui/Ux
+                                    Development</a>
+                            </li>
+                            <li class="li">
+                                <a class="a mat-button" color="primary" href="php-development" mat-button> Php
+                                    Development</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile">
+                        <h6 class="h6">Mobile Development</h6>
+                        <ul class="ul">
+                            <li class="li"> <a class="a mat-button" color="primary" mat-button
+                                    href="android-development">Android App
+                                    Development</a></li>
+                            <li class="li"> <a class="a mat-button" color="primary" mat-button href="ios-development">
+                                    IOS App
+                                    Development</a></li>
+                        </ul>
+                    </div>
+                    <div class="business">
+                        <h6 class="h6">Business Enterprise Development</h6>
+                        <ul class="ul">
+                            <li class="li">
+                                <a class="a mat-button" color="primary" mat-button href="block-chain-development"> Block
+                                    Chain
+                                    Development</a>
+                            </li>
+                            <li class="li">
+                                <a class="a mat-button" color="primary" mat-button href="internet-of-things"> Internet
+                                    of Things(IOT)
+                                    development</a>
+                            </li>
+                            <li class="li">
+                                <a class="a mat-button" color="primary" mat-button href="artificial-intelligence">
+                                    Artificial
+                                    Intelligence</a>
+                            </li>
+                            <li class="li">
+                                <a class="a mat-button" color="primary" mat-button href="cognitive-cloud-computing">
+                                    Cognitive Cloud
+                                    Computing</a>
+                            </li>
+                            <li class="li">
+                                <a class="a mat-button" color="primary" mat-button href="ecommerce-development">
+                                    E-Commerce Development
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="services-link">
+                <a class="a mat-button hire-a-resource" color="primary" (click)="scrollToTop()"
+                    routerLinkActive="hire-a-resource-active" matBadge="!" matBadgeColor="warn" matBadgeSize="small"
+                    matBadgeOverlap="true" (click)="toggleBadgeVisibility()" [matBadgeHidden]="hidden" mat-button>Hire
+                    Resource</a>
+                <div class="services-menu menu-width">
+                    <div class="web">
+                        <h6 class="h6">Hire Our Resource</h6>
+                        <ul class="ul">
+                            <li class="li">
+                                <a class="a mat-button" color="primary" href="hire-web-developer" mat-button>Hire
+                                    a Web Developer</a>
+                            </li>
+                            <li class="li">
+                                <a class="a mat-button" color="primary" href="hire-mobile-developer" mat-button>Hire
+                                    a Mobile Developer</a>
+                            </li>
+                            <li class="li">
+                                <a class="a mat-button" color="primary" href="hire-business-enterprise-developer"
+                                    mat-button>Hire a Buiness Enterprise Developer</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <a class="a mat-button" color="primary" mat-button (click)="scrollToTop()" routerLinkActive="active"
+                routerLink="about">About</a>
+            <a class="a mat-button" color="primary" mat-button (click)="scrollToTop()" routerLinkActive="active"
+                routerLink="contact">Contact</a>
+        </div>
+    </div>
+</div>

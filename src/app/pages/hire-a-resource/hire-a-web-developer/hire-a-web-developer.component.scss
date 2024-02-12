@@ -1,0 +1,243 @@
+@import '../../../theme/theme.scss';
+
+.mat-icon {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 0px) {
+    .home {
+        height: 100%;
+        width: 100%;
+        background-color: $primary99;
+        animation: fade-in 1s;
+
+        .h3,
+        .h5 {
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            word-spacing: 0.5rem;
+            padding: 2rem 1rem !important;
+        }
+
+        .p {
+            padding: 2rem 1rem;
+
+            .span {
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+        .r1 {
+            padding: 2rem 0;
+            background-color: $primary10;
+            color: $primary98;
+
+            .r1c1 {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
+        }
+
+        .r3 {
+            height: auto;
+            padding: 1rem;
+
+            .r3c1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-content: space-evenly;
+                align-items: center;
+
+                .r3c1r1 {
+                    .r3c1r1c1 {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-content: space-evenly;
+                        padding: 1rem;
+
+                        .mat-card {
+                            display: flex;
+                            background-color: $primary100;
+                            border-radius: 1rem;
+                            overflow: hidden;
+                            // border: 1px solid $primary90;
+
+                            .mat-card-header {
+                                height: 64px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: $primary95;
+                                padding: 1rem;
+                            }
+
+                            .mat-card-content {
+                                height: 200px;
+                                display: flex;
+                                align-items: center;
+                            }
+
+                            .mat-card-actions {
+                                border-top: 1px solid $primary80;
+                                display: flex;
+                                justify-content: space-between;
+
+                                .mat-flat-button {
+                                    background-color: $primary95;
+                                    border-radius: 2rem;
+                                    font-family: Outfit;
+                                }
+
+                                .img {
+                                    height: 32px;
+                                    width: 32px;
+                                    border: 1px solid $primary80;
+                                    border-radius: 4px;
+                                    padding: 4px;
+                                    margin: 0.5rem;
+                                }
+                            }
+
+                            .icons {
+                                height: 40px;
+                                width: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .r4 {
+            display: flex;
+            justify-content: space-evenly;
+            align-content: space-evenly;
+            background-color: $primary40;
+            color: $primary98;
+
+            .r4c1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-content: space-evenly;
+                padding: 2rem;
+
+                .h3 {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                .r4c1r1 {
+                    .r4c1r1c1 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        align-content: space-evenly;
+
+                        .mat-card {
+                            margin: 1rem;
+                            background-color: $primary10;
+                            border: 1px solid $primary0;
+                            border-radius: 1rem;
+
+                            .mat-card-content {
+                                height: 100%;
+                                min-height: 128px;
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .r5 {
+            height: auto;
+            padding: 1rem;
+            background-color: $primary98;
+
+            .r5c1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-content: space-evenly;
+                align-items: center;
+
+                .h3 {
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                .p {
+                    font-size: 16px;
+                    line-height: 1.5;
+                    margin-bottom: 15px;
+                }
+
+                .r5c1r1 {
+                    .r5c1r1c1 {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-content: space-evenly;
+                        padding: 1rem;
+
+                        .mat-card {
+                            background-color: $primary100;
+                            border-radius: 1rem;
+                            display: flex;
+                            justify-content: space-between;
+                            transition: 0.3s ease-in-out;
+                            box-shadow: 3px 3px 0px 1px $primary90;
+
+                            .mat-card-header {
+                                display: flex;
+                                align-items: center;
+                                height: 100px;
+
+                                .icons {
+                                    height: 40px;
+                                    width: 40px;
+                                }
+                            }
+
+                            .mat-card-content {
+                                display: flex;
+                                align-items: center;
+                                height: 200px;
+                                background-color: $primary95;
+                                border-radius: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .home {
+        .r3 {
+            padding: 4rem;
+        }
+
+        .r5 {
+            padding: 4rem;
+        }
+    }
+}

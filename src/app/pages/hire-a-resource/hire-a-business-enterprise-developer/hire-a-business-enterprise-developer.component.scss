@@ -1,0 +1,138 @@
+@import '../../../theme/theme.scss';
+
+.mat-icon {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 0px) {
+    .home {
+        height: 100%;
+        width: 100%;
+
+        .r1 {
+            padding: 2rem 0;
+            background-color: $primary10;
+            color: $primary98;
+
+            .r1c1 {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
+        }
+
+        .r3 {
+            padding: 2rem;
+            background-color: $primary98;
+
+            .r3c1 {
+                padding: 2rem;
+
+                .mat-card {
+                    display: flex;
+                    background-color: $primary98;
+                    border-radius: 1rem;
+                    overflow: hidden;
+
+                    .mat-card-header {
+                        height: 64px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $primary95;
+                        padding: 1rem;
+                    }
+
+                    .mat-card-content {
+                        height: 200px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .mat-card-actions {
+                        border-top: 1px solid $primary80;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .mat-flat-button {
+                            background-color: $primary95;
+                            border-radius: 2rem;
+                            font-family: Outfit;
+                        }
+
+                        .img {
+                            height: 32px;
+                            width: 32px;
+                            border: 1px solid $primary80;
+                            border-radius: 4px;
+                            padding: 4px;
+                            margin: 0.5rem;
+                        }
+                    }
+
+                    .icons {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+        }
+
+        .r4 {
+            background-color: $primary40;
+            padding: 2rem;
+
+            .h3 {
+                color: $primary98;
+                text-align: center;
+            }
+
+            .r4c1 {
+                padding: 2rem;
+
+                .mat-card {
+                    display: flex;
+                    background-color: $primary98;
+                    border-radius: 1rem;
+                    overflow: hidden;
+
+                    .mat-card-header {
+                        color: $primary60;
+                        height: 64px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // background-color: $color-black-100;
+                        padding: 1rem;
+                    }
+
+                    .mat-card-content {
+                        height: 200px;
+                        display: flex;
+                        align-items: center;
+                        color: $primary30;
+                    }
+
+                    .icons {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .home {
+
+        .r4 {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+}

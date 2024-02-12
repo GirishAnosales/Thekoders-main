@@ -1,0 +1,53 @@
+<div class="container-fluid home">
+
+    <div class="row r1">
+        <div class="col-sm-12 r1c1">
+            <div>
+                <img src="../../../../../assets/images/brands/cognitive-cloud-computing.png" alt="Cognitive Cloud Computing" class="img">
+            </div>
+            <h3 class="h3">{{r1[0].title}}</h3>
+        </div>
+    </div>
+
+    <div class="row r2">
+        <div class="col-sm-12 r2c1">
+            <div class="row r2c1r1">
+                <div class="col-sm-12 r2c1r1c1" *ngFor="let items of r2">
+                    <mat-card class="mat-card">
+                        <mat-card-content class="mat-card-content">
+                            <p class="p">{{items.content}}</p>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row r3">
+        <div class="col-sm-12 r3c1">
+            <div class="row r3c1r1">
+                <div class="col-sm-12 r3c1r1c1" *ngFor="let items of r3">
+                    <mat-card class="mat-card">
+                        <mat-card-content class="mat-card-content">
+                            <p class="p">{{items.content}}</p>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row r2">
+        <div class="col-sm-12 r2c1">
+            <div class="row r2c1r1">
+                <div class="col-sm-12 r2c1r1c1" *ngFor="let items of r4">
+                    <mat-card class="mat-card">
+                        <mat-card-content class="mat-card-content">
+                            <p class="p">{{items.content}}</p>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

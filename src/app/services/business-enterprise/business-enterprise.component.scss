@@ -1,0 +1,66 @@
+@import '../../theme/theme.scss';
+
+@media screen and (min-width: 0px) {
+    .home {
+        height: 100%;
+        width: 100%;
+
+        .r2 {
+            height: 640px;
+            background-image: url('../../../assets/images/pattern/1\ \(5\).png');
+            background-position: center;
+            background-color: $color-blue-700;
+            color: $color-black-50;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            .r2c1 {
+                width: 80%;
+
+                .h1 {
+                    padding: 4rem 0;
+                }
+            }
+        }
+
+        .r3 {
+            .r3c1 {
+                padding: 0%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .home {
+        .r2 {
+            .r2c1 {
+                width: 100%;
+
+                .h1 {
+                    padding: 4rem 0;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .home {
+        .r2 {
+            background-size: 100% 100%;
+            height: 840px;
+
+            .r2c1 {
+                width: 50%;
+
+                .h1 {
+                    padding: 4rem 0;
+                }
+            }
+        }
+    }
+
+}

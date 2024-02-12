@@ -1,0 +1,139 @@
+@import '../../theme/theme.scss';
+
+.snackbar-padding {
+    padding-top: 16px;
+}
+
+.mat-icon {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 0px) {
+    .home {
+        height: 100%;
+
+        .r1 {
+            color: $color-white-50;
+
+            .r1c1 {
+                .mat-dialog-content {
+                    .form {
+                        background-color: $color-white-50;
+                        box-shadow: 0px 3px 6px 0px #00000020;
+                        color: $color-white-50;
+                        border-radius: 0.3rem;
+                        padding: 2rem;
+                        margin-top: 2rem;
+                        font-family: MavenPro;
+                        height: 100%;
+
+                        .mat-dialog-content {
+                            height: inherit;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                        }
+
+                        .mat-form-field {
+                            width: 100%;
+
+                            .mat-text-field {
+                                background-color: #fff;
+                            }
+
+                            .mat-label {
+                                font-size: small;
+                            }
+                        }
+
+                        .title-logo {
+                            background-color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-bottom: 1rem;
+
+                            .img-people {
+                                height: 32px;
+                                width: 32px;
+                            }
+
+                            .h4 {
+                                margin: 0;
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .home {
+        .r1 {
+            display: flex;
+            justify-content: center;
+
+            .form {
+
+                .mat-form-field {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .home {
+        .r1 {
+            .r1c1 {
+                .mat-dialog-content {
+                    max-width: 100%;
+                    max-height: 100%;
+
+                    .form {
+                        color: $color-white-50;
+                        border-radius: 0.3rem;
+                        font-family: MavenPro;
+                    }
+
+                    .mat-form-field {
+                        width: 100%;
+
+                        .mat-text-field {
+                            background-color: #fff;
+                        }
+
+                        .mat-label {
+                            font-size: small;
+                        }
+                    }
+
+                    .title-logo {
+                        background-color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-bottom: 1rem;
+
+                        .img-people {
+                            height: 32px;
+                            width: 32px;
+                        }
+
+                        .h4 {
+                            margin: 0;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

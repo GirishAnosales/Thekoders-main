@@ -1,0 +1,100 @@
+@import '../../theme/theme.scss';
+
+@media screen and (min-width:960px) {
+    .footer {
+        background-color: $primary99;
+        // box-shadow: 0px 0px -6px 0px #00000010;
+        color: $primary20;
+        border-top: 1px solid $primary90;
+        position: relative;
+        z-index: 1;
+
+        .r1 {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+
+            .c1,
+            .c2,
+            .c3,
+            .c4 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 3rem;
+                padding-top: 1rem;
+                border-right: 1px solid $primary90;
+
+                .a {
+                    margin-left: 1rem;
+                    text-decoration: none;
+
+                    .h6 {
+                        font-size: small;
+                        font-weight: 300;
+                        transition: .2s;
+                        color: $primary40;
+                        letter-spacing: .5px;
+                    }
+
+                    .h6:hover {
+                        font-weight: 400;
+                        transition: .3s;
+                        color: $primary0;
+                    }
+                }
+
+                .social-media-icons {
+                    margin-top: 1rem;
+
+                    .social-media-links {
+                        padding: 1rem;
+
+                        .bi {
+                            color: $primary40;
+                            transition: .3s;
+                            font-size: 20px;
+                        }
+
+                        .bi:hover {
+                            color: $primary0;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+
+            .c4 {
+                border-right: 0px;
+            }
+        }
+
+        .r2 {
+            padding: 1rem 0;
+            border-top: 1px solid $primary90;
+
+            .c1 {
+                text-align: center;
+
+                .h6 {
+                    margin: 0;
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .footer {
+        .r1 {
+
+            .c1,
+            .c2,
+            .c3,
+            .c4 {
+                padding-left: 7rem;
+            }
+        }
+    }
+}

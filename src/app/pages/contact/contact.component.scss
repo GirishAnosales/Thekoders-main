@@ -1,0 +1,234 @@
+@import '../../theme/theme.scss';
+@import '../../theme/keyframes.scss';
+
+.snackbar-padding {
+    padding-top: 16px;
+}
+
+.mat-icon {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 0px) {
+    .contact {
+        height: 100%;
+        animation: fade-in 1s;
+
+        .wallpaper-row {
+            .wallpaper-col {
+                height: 720px;
+                background-image: url('../../../assets/images/pattern/1\ \(6\).png');
+                background-position: center;
+            }
+        }
+
+        .r1 {
+            color: $color-white-50;
+
+            .r1c1 {
+                position: absolute;
+                top: 8rem;
+                height: 100%;
+
+                .intro {
+                    color: $color-black-900;
+                    text-align: start;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .h4 {
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .r1c2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 70%;
+
+                .mat-dialog-content {
+                    .form {
+                        background-color: $color-white-50;
+                        box-shadow: 0px 3px 6px 0px #00000020;
+                        color: $color-white-50;
+                        border-radius: 0.3rem;
+                        padding: 2rem;
+                        margin-top: 2rem;
+                        font-family: MavenPro;
+                        height: 100%;
+
+                        .mat-form-field {
+                            .mat-text-field {
+                                background-color: #fff;
+                            }
+
+                            .mat-label {
+                                font-size: small;
+                            }
+                        }
+
+                        .title-logo {
+                            background-color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-bottom: 1rem;
+
+                            .img-people {
+                                height: 32px;
+                                width: 32px;
+                            }
+
+                            .h4 {
+                                margin: 0;
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .r2 {
+            background-color: $color-white-50;
+
+            .r2c1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 1rem;
+
+                .contact-info {
+                    margin: 1rem;
+                    padding: 1rem;
+                    background-color: #00518910;
+                    box-shadow: 0px 3px 10px 0px #00000020 inset;
+                    border-radius: 1rem;
+
+                    .h5 {
+                        color: $color-black-900;
+                        border-radius: 4px;
+                        padding: 0.5rem !important;
+                        text-decoration: underline;
+                        text-transform: uppercase;
+                        letter-spacing: 0.3rem;
+                        text-align: center;
+
+                        .span {
+                            font-size: 12px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .contact {
+        .r1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .r2 {
+            background-size: 100%;
+
+            .r2c1 {
+                padding: 2rem 0;
+
+                .form {
+
+                    .mat-form-field {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .contact {
+        .wallpaper-row {
+            .wallpaper-col {
+                height: 840px;
+                background-size: 100% 100%;
+            }
+        }
+
+        .r1 {
+            position: absolute;
+            top: 10rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 4rem;
+
+            .r1c1 {
+                top: 6rem;
+            }
+
+            .r1c2 {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+
+                .mat-dialog-content {
+                    max-width: 100%;
+                    max-height: 100%;
+
+                    .form {
+                        box-shadow: 0px 3px 0px 10px #00000020;
+                        backdrop-filter: blur(20px);
+                        color: $color-white-50;
+                        border-radius: 0.3rem;
+                        padding: 2rem;
+                        margin-top: 2rem;
+                        font-family: MavenPro;
+
+                        .mat-form-field {
+                            width: 100%;
+
+                            .mat-text-field {
+                                background-color: #fff;
+                            }
+
+                            .mat-label {
+                                font-size: small;
+                            }
+                        }
+
+                        .title-logo {
+                            background-color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-bottom: 1rem;
+
+                            .img-people {
+                                height: 32px;
+                                width: 32px;
+                            }
+
+                            .h4 {
+                                margin: 0;
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

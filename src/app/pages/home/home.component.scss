@@ -1,0 +1,18 @@
+@import '../../theme/theme.scss';
+@import '../../theme/keyframes.scss';
+
+@media screen and (min-width: 0px) {
+    .home {
+        animation: fade-in 1s;
+    }
+}
+
+@media screen and (min-width: 425px) {}
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 960px) {}
+
+@media screen and (min-width: 1440px) {}

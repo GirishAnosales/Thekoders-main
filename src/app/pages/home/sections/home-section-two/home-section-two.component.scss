@@ -1,0 +1,84 @@
+@import '../../../../theme/theme.scss';
+
+@media screen and (min-width: 0px) {
+    .home {
+        background-color: $primary100;
+
+        .r1 {
+            padding: 4rem 0;
+
+            .r1c1 {
+                .r1c1r1 {
+                    text-align: center;
+
+                    .h3 {
+                        text-transform: uppercase;
+                        letter-spacing: 0.2rem;
+                        word-spacing: 0.5rem;
+                        padding: 4rem 1rem !important;
+                        color: $primary30;
+                    }
+                }
+
+                .r1c1r2,
+                .r1c1r3 {
+                    .rc {
+                        padding: 3rem 0;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+
+                        .circle {
+                            background: linear-gradient(180deg, $primary95 0%, $primary100 100%);
+                            box-shadow: 0px 3px 6px 0px $primary90;
+                            height: 200px;
+                            width: 200px;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .h5 {
+                                color: $primary40;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) {}
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+    .home {
+        .r1 {
+            height: 720px;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .home {
+        .r1 {
+            height: 100%;
+            background-size: 100% 100%;
+
+            .r1c1 {
+                .r1c1r1 {
+                    .h3 {
+                        text-transform: uppercase !important;
+                        letter-spacing: 0.1rem !important;
+                        word-spacing: 1rem !important;
+                        padding: 2rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {}

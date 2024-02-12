@@ -1,0 +1,21 @@
+@import '../../theme/theme.scss';
+
+.home {
+    background-color: $color-blue-700;
+    height: 840px;
+    width: 100%;
+
+    .r1 {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: center;
+
+        .r1c1 {
+            .mat-card {
+                border: 4px solid $color-black-900;
+            }
+        }
+    }
+}

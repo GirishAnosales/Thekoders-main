@@ -1,0 +1,183 @@
+<div class="container-fluid sidenav" *ngIf="isSmall | async">
+	<div class="row r">
+		<div class="col-sm-12 c">
+			<mat-sidenav-container class="sidenav-container">
+				<mat-sidenav #drawer class="mat-sidenav" fixedInViewport
+					[attr.role]="(isSmall | async) ? 'dialog' : 'navigation'" mode="over">
+					<mat-nav-list class="mat-nav-list">
+						<div class="close-button">
+							<button class="button" type="button" aria-label="Toggle sidenav" mat-icon-button
+								(click)="drawer.close()">
+								<mat-icon class="icon" aria-label="Side nav toggle icon">close</mat-icon>
+							</button>
+						</div>
+
+						<!-- PAGES -->
+						<div class="label">
+							<h6 class="h6">Pages</h6>
+						</div>
+						<a class="a" mat-list-item (click)="drawer.close()" href="home">
+							<h6 class="h6">Home</h6>
+						</a>
+						<mat-divider class="mat-divider"></mat-divider>
+						<a class="a" mat-list-item (click)="drawer.close()" href="careers">
+							<h6 class="h6">Careers</h6>
+						</a>
+						<mat-divider class="mat-divider"></mat-divider>
+						<a class="a" mat-list-item (click)="drawer.close()" href="hire-a-resource">
+							<h6 class="h6">Hire a resource</h6>
+						</a>
+						<mat-divider class="mat-divider"></mat-divider>
+						<a class="a" mat-list-item (click)="drawer.close()" href="about">
+							<h6 class="h6">About</h6>
+						</a>
+						<mat-divider class="mat-divider"></mat-divider>
+						<a class="a" mat-list-item (click)="drawer.close()" href="contact">
+							<h6 class="h6">Contact</h6>
+						</a>
+						<mat-divider class="mat-divider"></mat-divider>
+
+						<!-- SERVICES -->
+						<div class="label">
+							<h6 class="h6">What We Provide</h6>
+						</div>
+
+						<!-- BUSINESS ENTERPRISE ACCORDION -->
+						<mat-accordion class="mat-accordion">
+							<mat-expansion-panel hideToggle>
+								<mat-expansion-panel-header>
+									<mat-panel-title class="title p-0"> Services </mat-panel-title>
+								</mat-expansion-panel-header>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="services/web">
+										<h6 class="h6">Web Development</h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="services/mobile">
+										<h6 class="h6">Mobile Development</h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()"
+										href="services/business-enterprise">
+										<h6 class="h6">Business Enterprise Development</h6>
+									</a>
+								</mat-action-row>
+							</mat-expansion-panel>
+						</mat-accordion>
+
+						<!-- WEB DEVELOPMENT ACCORDION -->
+						<!-- <mat-accordion class="mat-accordion">
+							<mat-expansion-panel hideToggle>
+								<mat-expansion-panel-header>
+									<mat-panel-title class="title p-0"> Web Development </mat-panel-title>
+								</mat-expansion-panel-header>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">MEAN Stack application development </h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">Angular Development</h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">React Js Development</h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">UX/Ui Design & Development</h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">PHP Development </h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">Node Js Development</h6>
+									</a>
+								</mat-action-row>
+							</mat-expansion-panel>
+						</mat-accordion> -->
+
+						<!-- MOBILE DEVELOPMENT ACCORDION -->
+						<!-- <mat-accordion class="mat-accordion">
+							<mat-expansion-panel hideToggle>
+								<mat-expansion-panel-header>
+									<mat-panel-title class="title p-0"> Mobile Development </mat-panel-title>
+								</mat-expansion-panel-header>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">Android App Development</h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">IOS App Development</h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">Flutter App Development</h6>
+									</a>
+								</mat-action-row>
+							</mat-expansion-panel>
+						</mat-accordion> -->
+
+						<!-- BUSINESS ENTERPRISE ACCORDION -->
+						<!-- <mat-accordion class="mat-accordion">
+							<mat-expansion-panel hideToggle>
+								<mat-expansion-panel-header>
+									<mat-panel-title class="title p-0"> Business Enterprise </mat-panel-title>
+								</mat-expansion-panel-header>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">Block Chain Development</h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">Internet of Things(IOT) Development</h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">Artificial Intelligence</h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">Cognitive Cloud Computing</h6>
+									</a>
+								</mat-action-row>
+								<mat-action-row class="p-0">
+									<a class="a" mat-list-item (click)="drawer.close()" href="">
+										<h6 class="h6">E-Commerce Development</h6>
+									</a>
+								</mat-action-row>
+							</mat-expansion-panel>
+						</mat-accordion> -->
+
+					</mat-nav-list>
+				</mat-sidenav>
+
+				<!-- MAT SIDE NAV CONTENT -->
+
+				<mat-sidenav-content class="mat-sidenav-content">
+					<mat-toolbar class="mat-toolbar">
+						<h1 class="h1">Thekoders</h1>
+						<button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+							<mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+						</button>
+					</mat-toolbar>
+				</mat-sidenav-content>
+			</mat-sidenav-container>
+		</div>
+	</div>
+</div>

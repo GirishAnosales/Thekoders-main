@@ -1,0 +1,108 @@
+@import '../../theme/theme.scss';
+@import '../../theme/keyframes.scss';
+
+.mat-icon {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 0px) {
+    .about {
+        height: 100%;
+        width: 100%;
+        animation: fade-in 1s;
+
+        .r1 {
+            height: 640px;
+            background-image: url('../../../assets/images/pattern/1\ \(7\).png');
+            background-position: center;
+
+            .r1c1 {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                .h1 {
+                    color: $primary98;
+                }
+            }
+        }
+
+        .r2,
+        .r3,
+        .r4,
+        .r5 {
+            padding: 1rem;
+
+            // .h5 {
+            //     font-weight: bold;
+            //     text-decoration: underline;
+            //     text-underline-offset: 0.3rem;
+            // }
+
+            .r2c1,
+            .r4c1,
+            .r5c1 {
+                padding: 1rem;
+                background-color: $primary98;
+                box-shadow: 0px 0px 6px 0px $primary90 inset;
+                border-radius: 1rem;
+            }
+
+            .r3c1 {
+                .mat-card {
+                    margin: 1rem 0 1rem 0;
+                    border-radius: 1rem;
+                    box-shadow: 0px 0px 6px 0px $primary90;
+                    height: 128px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .about {
+        font-size: large;
+
+        .r1 {
+            height: 840px;
+
+            .r1c1 {
+                .h1 {
+                    width: 60%;
+                }
+            }
+        }
+
+        .r2,
+        .r3,
+        .r4,
+        .r5 {
+            padding: 4rem;
+
+            .h5 {
+                display: inline;
+                align-self: flex-start;
+            }
+
+            .r2c1,
+            .r4c1,
+            .r5c1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .p {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import './theme/theme.scss';
+
+.app {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+
+    .r1 {
+        padding: 0%;
+
+        .r1c1 {
+            padding: 0%;
+        }
+    }
+}
+
+.mat-mini-fab-up {
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    z-index: 9999;
+}
+
+.mat-mini-fab-down {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 9999;
+}

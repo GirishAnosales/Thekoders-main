@@ -1,0 +1,166 @@
+<div class="container-fluid header">
+    <div class="row r">
+        <div class="col-sm-6 c1">
+            <div class="logo" *ngIf="(isMediumLargeXLarge | async)">
+                <a class="a" routerLink="home" (click)="scrollToTop()">
+                    <img class="logo-img" src="../../../assets/images/logo/thekoders.png" alt="Logo">
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6 c2">
+            <ng-container class="ng-container" *ngIf="(isMediumLargeXLarge | async)">
+
+                <!-- HOME BUTTON -->
+
+                <button routerLink="home" (click)="scrollToTop()" class="button" color="primary"
+                    routerLinkActive="active" style="color: #fff; font-family: Outfit; font-weight: 300;"
+                    mat-button>Home</button>
+
+                <!-- SERVICES BUTTON -->
+
+                <button [matMenuTriggerFor]="menu" class="button" color="primary" routerLinkActive="active"
+                    matMenuTrigger="hover" style="color: #fff; font-family: Outfit;  font-weight: 300;"
+                    mat-button>Services</button>
+
+                <!-- DROP DOWN MENU -->
+                <mat-menu class="mat-menu" #ServicesButton #menu="matMenu" xPosition="before">
+                    <button routerLink="services/web" color="primary" (click)="scrollToTop()" class="mat-menu-item"
+                        mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">
+                            Web Development
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button routerLink="services/mobile" color="primary" (click)="scrollToTop()" class="mat-menu-item"
+                        mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">
+                            Mobile Development</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button routerLink="services/business-enterprise" color="primary" (click)="scrollToTop()"
+                        class="mat-menu-item" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">
+                            Business Enterprise</h6>
+                    </button>
+                </mat-menu>
+
+                <mat-menu #webDevelopment="matMenu">
+                    <button routerLink="mean-stack-development" color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">MEAN Stack
+                            application development</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button routerLink="angular-development" color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Angular Development
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button routerLink="react-development" color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">React Js
+                            Development
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button routerLink="ui-ux-development" color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">UX/Ui Design &
+                            Development
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button routerLink="php-development" color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">PHP Development
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button routerLink="node-development" color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Node Js Development
+                        </h6>
+                    </button>
+                </mat-menu>
+
+                <mat-menu #mobileDevelopment="matMenu">
+                    <button color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Android App
+                            Development</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">IOS App Development
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Flutter App
+                            Development</h6>
+                    </button>
+                </mat-menu>
+
+                <mat-menu #businessEnterprise="matMenu">
+                    <button color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Block chain
+                            development</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Internet of
+                            Things(IOT) development</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Artificial
+                            Intelligence</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">Cognitive cloud
+                            computing</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button color="primary" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">E-Commerce
+                            Development</h6>
+                    </button>
+                </mat-menu>
+
+                <!-- HIRE A RESOURCE -->
+
+                <button color="primary" (click)="scrollToTop()" class="button" matBadge="!" matBadgeColor="warn"
+                    matBadgeSize="small" matBadgeOverlap="true" (click)="toggleBadgeVisibility()"
+                    [matBadgeHidden]="hidden" style="color: #fff; font-family: Outfit; font-weight: 300;"
+                    routerLink="hire-a-resource" routerLinkActive="active" mat-button>Hire A Resource</button>
+                <mat-menu class="mat-menu" #ServicesButton #hire="matMenu">
+                    <button routerLink="hire-web-developer" color="primary" (click)="scrollToTop()"
+                        class="mat-menu-item" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">
+                            Hire a Web Developer
+                        </h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button routerLink="hire-mobile-developer" color="primary" (click)="scrollToTop()"
+                        class="mat-menu-item" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">
+                            Hire a Mobile Developer</h6>
+                    </button>
+                    <mat-divider style="border-top-color: #00000018;"></mat-divider>
+                    <button routerLink="hire-business-enterprise-developer" color="primary" (click)="scrollToTop()"
+                        class="mat-menu-item" mat-menu-item>
+                        <h6 class="h6" style="font-size: small; margin: 0; font-family: Montserrat;">
+                            Hire a Business Enterprise Developer</h6>
+                    </button>
+                </mat-menu>
+
+                <!-- ABOUT BUTTON -->
+
+                <button color="primary" routerLink="about" (click)="scrollToTop()" class="button"
+                    routerLinkActive="active" style="color: #fff; font-family: Outfit;  font-weight: 300;"
+                    mat-button>About</button>
+
+                <!-- CONTACT BUTTON -->
+
+                <button color="primary" routerLink="contact" (click)="scrollToTop()" class="button"
+                    routerLinkActive="active" style="color: #fff; font-family: Outfit;  font-weight: 300;"
+                    mat-button>Contact</button>
+            </ng-container>
+        </div>
+    </div>
+</div>
